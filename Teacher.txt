@@ -1,0 +1,16 @@
+SELECT now()
+SELECT user,host,grant_priv FROM mysql.user
+สร้าง database , table ชื่อ teacher
+INSERT INTO myschool.teacher (id,firstname , lastname , email)
+VALUE ('2','มานะ','วินัย','rajsema@vidya');
+1	วิศรุต	วงศ์ซิ้ม	witsarut@nida.co.th
+2	มานะ	วินัย	rajsema@vidya
+
+
+SELECT * FROM myschool.student;
+INSERT INTO myschool.student (id,firstname , lastname , email,birthday)
+VALUE ('1','Harry','Potter','harry@nida.co.th','2000-12-20');
+INSERT INTO myschool.student (id,firstname , lastname , email,birthday)
+VALUE ('2','Henry','Teery','henry@nida.co.th','1995-01-20');
+INSERT INTO myschool.student (id,firstname , lastname , email,birthday)
+VALUE ('3','Pikachu','Poke','poke@nida.co.th','1990-02-20');
