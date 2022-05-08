@@ -96,6 +96,8 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 --
 -- Dumping data for table `major`
 --
@@ -106,7 +108,6 @@ INSERT INTO `major` VALUES (1,'DADS','Data Analytics and Data Science'),(2,'MADT
 /*!40000 ALTER TABLE `major` ENABLE KEYS */;
 UNLOCK TABLES;
 
---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 LOCK TABLES `stu_tea_class` WRITE;
 /*!40000 ALTER TABLE `stu_tea_class` DISABLE KEYS */;
 INSERT INTO `stu_tea_class` VALUES (2564,1,'dads4003',6,'6220000040',NULL),(2564,1,'dads7206',1,'6220000040',NULL),(2564,2,'dads4002',1,'6220000001',NULL),(2564,2,'dads4002',1,'6220000030',NULL),(2564,3,'dads4003',7,'6020000010',NULL),(2564,3,'dads4003',7,'6220000020',NULL),(2564,3,'dads4003',7,'6220000030',NULL),(2564,3,'dads4003',7,'6220000040',NULL);
@@ -124,4 +125,7 @@ UNLOCK TABLES;
 
 -
 
--- Dump completed on 2021-11-29 23:56:13
+
+UNLOCK TABLES;-- Dump data in member table
+LOCK TABLES `cafe`.`customer` WRITE;
+INSERT INTO `cafe`.`customer` VALUES ('0001','จารุวรรณ','เหลืองสีนาค',20,5,'หญิง');
