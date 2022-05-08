@@ -52,8 +52,9 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `cafe`.`store` (
   `Store_ID` CHAR(4) NOT NULL,
-  `Store_province` VARCHAR(70) NOT NULL,
   `Store_name` VARCHAR(50) NOT NULL,
+  `Store_province` VARCHAR(70) NOT NULL,
+
   PRIMARY KEY (`Store_ID`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
