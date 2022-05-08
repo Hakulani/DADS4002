@@ -126,6 +126,7 @@ UNLOCK TABLES;
 -
 
 
-UNLOCK TABLES;-- Dump data in member table
+ -- Dump data in member table
 LOCK TABLES `cafe`.`customer` WRITE;
 INSERT INTO `cafe`.`customer` VALUES ('0001','จารุวรรณ','เหลืองสีนาค',20,5,'หญิง');
+UNLOCK TABLES;
