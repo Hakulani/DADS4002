@@ -120,27 +120,82 @@ UNLOCK TABLES;
 
  -- Dump data in menu table
 LOCK TABLES `menu` WRITE;
-INSERT INTO `menu` VALUES ('0001','Espresso',35,20,'Hot','Coffee'),('0002','Espresso',55,25,'Cold','Coffee'),('0003','Espresso',60,30,'Frappe','Coffee'),('0004','Espresso Con Panna',45,25,'Hot','Coffee'),
-('0005','Espresso Con Panna',65,30,'Cold','Coffee'),('0006','Espresso Con Panna',70,35,'Frappe','Coffee'),('0007','Americano',50,30,'Hot','Coffee'),('0008','Americano',55,35,'Cold','Coffee'),
-('0009','Americano',60,40,'Frappe','Coffee'),('0010','Long Black',50,30,'Hot','Coffee'),('0011','Long Black',55,35,'Cold','Coffee'),('0012','Long Black',60,40,'Frappe','Coffee'),
-('0013','Latte',50,30,'Hot','Coffee'),('0014','Latte',65,35,'Cold','Coffee'),('0015','Latte',70,40,'Frappe','Coffee'),('0016','Piccolo',50,20,'Hot','Coffee'),
-('0017','Piccolo',55,25,'Cold','Coffee'),('0018','Piccolo',60,30,'Frappe','Coffee'),('0019','Cappuccino',45,25,'Hot','Coffee'),('0020','Cappuccino',60,30,'Cold','Coffee'),
-('0021','Cappuccino',65,35,'Frappe','Coffee'),('0022','Mocha',50,25,'Hot','Coffee'),('0023','Mocha',60,30,'Cold','Coffee'),('0024','Mocha',70,35,'Frappe','Coffee'),
-('0025','White Mocha',55,30,'Hot','Coffee'),('0026','White Mocha',65,35,'Cold','Coffee'),('0027','White Mocha',75,40,'Frappe','Coffee'),('0028','Macchiato',50,25,'Hot','Coffee'),
-('0029','Macchiato',60,30,'Cold','Coffee'),('0030','Macchiato',70,35,'Frappe','Coffee'),('0031','Caramel Macchiato',55,30,'Hot','Coffee'),('0032','Caramel Macchiato',65,35,'Cold','Coffee'),
-('0033','Caramel Macchiato',75,40,'Frappe','Coffee'),('0034','Italian soda',50,20,'Cold','Coffee'),('0035','Chocolate',45,25,'Hot','Coffee'),('0036','Chocolate',50,30,'Cold','Coffee'),
-('0037','Chocolate',55,35,'Frappe','Coffee'),('0038','Dark Chocolate',50,30,'Hot','Milk-Chocolate'),('0039','Dark Chocolate',55,35,'Cold','Milk-Chocolate'),
-('0040','Dark Chocolate',60,40,'Frappe','Milk-Chocolate'),('0042','Green Tea',40,15,'Hot','Tea'),('0043','Green Tea',45,20,'Cold','Tea'),('0044','Green Tea',50,25,'Frappe','Tea'),
-('0045','Milk Tea',45,20,'Hot','Tea'),('0046','Milk Tea',50,25,'Cold','Tea'),('0047','Milk Tea',55,30,'Frappe','Tea'),('0048','Thai Tea',45,20,'Hot','Tea'),
-('0049','Thai Tea',50,25,'Cold','Tea'),('0050','Thai Tea',55,30,'Frappe','Tea'),('0051','Mango Sticky Rice',100,60,'Dessert','Dessert'),('0052','Strawberry Pancake',150,90,'Dessert','Dessert'),
-('0053','Choc Banana Pancake',155,80,'Dessert','Dessert'),('0054','Macaron',120,80,'Dessert','Dessert'),('0055','Pudding',150,100,'Dessert','Dessert'),('0056','Butter Cake',120,100,'Dessert','Dessert'),
-('0057','Whole Wheat Bread',150,120,'Dessert','Dessert'),('0058','strawberry cheese pie',120,80,'Dessert','Dessert'),('0059','Blueberry Cheese Pie',150,100,'Dessert','Dessert'),
-('0060','Honey Toast',150,80,'Dessert','Dessert'),('0061','Toast',25,20,'Dessert','Dessert'),('0062','Waffle',50,30,'Dessert','Dessert'),
-('0063','Cheese cake',125,80,'Dessert','Dessert'),('0064','Custard Cake',60,40,'Dessert','Dessert'),
-('0065','Cookie',150,90,'Dessert','Dessert'),('0066','Brownie',80,50,'Dessert','Dessert'),('0067','Pancake',40,20,'Dessert','Dessert'),('0068','Banana Cake',40,20,'Dessert','Dessert'),
-('0069','Muffin',90,30,'Dessert','Dessert'),('0070','Cake Roll',45,20,'Dessert','Dessert'),('0071','Basque Cheesecake',250,100,'Dessert','Dessert')
+INSERT INTO `menu` VALUES ('0001','Espresso',35,20,'Hot','Coffee'),
+('0002','Espresso',55,25,'Cold','Coffee'),
+('0003','Espresso',60,30,'Frappe','Coffee'),
+('0004','Espresso Con Panna',45,25,'Hot','Coffee'),
+('0005','Espresso Con Panna',65,30,'Cold','Coffee'),
+('0006','Espresso Con Panna',70,35,'Frappe','Coffee'),
+('0007','Americano',50,30,'Hot','Coffee'),
+('0008','Americano',55,35,'Cold','Coffee'),
+('0009','Americano',60,40,'Frappe','Coffee'),
+('0010','Long Black',50,30,'Hot','Coffee'),
+('0011','Long Black',55,35,'Cold','Coffee'),
+('0012','Long Black',60,40,'Frappe','Coffee'),
+('0013','Latte',50,30,'Hot','Coffee'),
+('0014','Latte',65,35,'Cold','Coffee'),
+('0015','Latte',70,40,'Frappe','Coffee'),
+('0016','Piccolo',50,20,'Hot','Coffee'),
+('0017','Piccolo',55,25,'Cold','Coffee'),
+('0018','Piccolo',60,30,'Frappe','Coffee'),
+('0019','Cappuccino',45,25,'Hot','Coffee'),
+('0020','Cappuccino',60,30,'Cold','Coffee'),
+('0021','Cappuccino',65,35,'Frappe','Coffee'),
+('0022','Mocha',50,25,'Hot','Coffee'),
+('0023','Mocha',60,30,'Cold','Coffee'),
+('0024','Mocha',70,35,'Frappe','Coffee'),
+('0025','White Mocha',55,30,'Hot','Coffee'),
+('0026','White Mocha',65,35,'Cold','Coffee'),
+('0027','White Mocha',75,40,'Frappe','Coffee'),
+('0028','Macchiato',50,25,'Hot','Coffee'),
+('0029','Macchiato',60,30,'Cold','Coffee'),
+('0030','Macchiato',70,35,'Frappe','Coffee'),
+('0031','Caramel Macchiato',55,30,'Hot','Coffee'),
+('0032','Caramel Macchiato',65,35,'Cold','Coffee'),
+('0033','Caramel Macchiato',75,40,'Frappe','Coffee'),
+('0034','Italian soda',50,20,'Cold','Coffee'),
+('0035','Chocolate',45,25,'Hot','Coffee'),
+('0036','Chocolate',50,30,'Cold','Coffee'),
+('0037','Chocolate',55,35,'Frappe','Coffee'),
+('0038','Dark Chocolate',50,30,'Hot','Milk-Chocolate'),
+('0039','Dark Chocolate',55,35,'Cold','Milk-Chocolate'),
+('0040','Dark Chocolate',60,40,'Frappe','Milk-Chocolate'),
+('0042','Green Tea',40,15,'Hot','Tea'),
+('0043','Green Tea',45,20,'Cold','Tea'),
+('0044','Green Tea',50,25,'Frappe','Tea'),
+('0045','Milk Tea',45,20,'Hot','Tea'),
+('0046','Milk Tea',50,25,'Cold','Tea'),
+('0047','Milk Tea',55,30,'Frappe','Tea'),
+('0048','Thai Tea',45,20,'Hot','Tea'),
+('0049','Thai Tea',50,25,'Cold','Tea'),
+('0050','Thai Tea',55,30,'Frappe','Tea'),
+('0051','Mango Sticky Rice',100,60,'Dessert','Dessert'),
+('0052','Strawberry Pancake',150,90,'Dessert','Dessert'),
+('0053','Choc Banana Pancake',155,80,'Dessert','Dessert'),
+('0054','Macaron',120,80,'Dessert','Dessert'),
+('0055','Pudding',150,100,'Dessert','Dessert'),
+('0056','Butter Cake',120,100,'Dessert','Dessert'),
+('0057','Whole Wheat Bread',150,120,'Dessert','Dessert'),
+('0058','strawberry cheese pie',120,80,'Dessert','Dessert'),
+('0059','Blueberry Cheese Pie',150,100,'Dessert','Dessert'),
+('0060','Honey Toast',150,80,'Dessert','Dessert'),
+('0061','Toast',25,20,'Dessert','Dessert'),
+('0062','Waffle',50,30,'Dessert','Dessert'),
+('0063','Cheese cake',125,80,'Dessert','Dessert'),
+('0064','Custard Cake',60,40,'Dessert','Dessert'),
+('0065','Cookie',150,90,'Dessert','Dessert'),
+('0066','Brownie',80,50,'Dessert','Dessert'),
+('0067','Pancake',40,20,'Dessert','Dessert'),
+('0068','Banana Cake',40,20,'Dessert','Dessert'),
+('0069','Muffin',90,30,'Dessert','Dessert'),
+('0070','Cake Roll',45,20,'Dessert','Dessert'),
+('0071','Basque Cheesecake',250,100,'Dessert','Dessert')
 ;
 UNLOCK TABLES;
+
+
+
+
 
 
  -- Dump data in customer table
@@ -158,17 +213,36 @@ UNLOCK TABLES;
                                                                                      
   -- Dump data in Store table
 LOCK TABLES `cafe`.`Store` WRITE;
-INSERT INTO `cafe`.`Store` VALUES ('C001','Coffee's เซ็นทรัลพระราม3','กรุงเทพมหานคร'),('C002','Coffee's เซ็นทรัลพระราม9','กรุงเทพมหานคร'),('C003','Coffee's Centralนครราชสีมา','นครราชสีมา'),
-('C004','Coffee's เซ็นทรัลศรีราชา','ชลบุรี'),('C005','Coffee's เซ็นทรัลอยุธยา','พระนครศรีอยุธยา'),('C006','Coffee's Centralมหาชัย','สมุทรสาคร'),
-('C007','Coffee's เซ็นทรัลเชียงใหม่','เชียงใหม่'),('C008','Coffee's UnitedCenter(สีลม)','กรุงเทพมหานคร'),('C009','Coffee's สยามเซ็นเตอร์','กรุงเทพมหานคร'),('C010','Coffee's เซ็นจูรี่อนุสาวรีย์','กรุงเทพมหานคร')
-('C011','Coffee's CentralWestgateบางใหญ่','กรุงเทพมหานคร'),('C012','Coffee's เซ็นทรัลเวิลด์','กรุงเทพมหานคร'),('C013','Coffee's CenterOneอนุสาวรีย์ชัยสมรภูมิ','กรุงเทพมหานคร'),
-('C014','Coffee's Centralสุราษฎร์ธานี','สุราษฎร์ธานี'),('C015','Coffee's Centralนครศรีธรรมราช','นครศรีธรรมราช'),('C016','Coffee's เซ็นทรัลลาดพร้าวชั้นG','กรุงเทพมหานคร'),
-('C017','Coffee's บิ๊กซีศรีนครินทร์,'สมุทรปราการ'),('C018','Coffee's บิ๊กซีพัทยาใต้','ชลบุรี'),('C019','Coffee's บิ๊กซีอยุธยา','พระนครศรีอยุธยา'),('C020','Coffee's บิ๊กซีสุขาภิบาล3','กรุงเทพมหานคร'),
-('C021','Coffee's บิ๊กซีพระราม4','กรุงเทพมหานคร'),('C022','Coffee's บิ๊กซีราชดำริ','กรุงเทพมหานคร'),('C023','Coffee's บิ๊กซีนครปฐม','นครปฐม'),('C024','Coffee's บิ๊กซีมหาชัย','สมุทรสาคร'),
-('C025','Coffee's บิ๊กซีสุขาภิบาล5,'กรุงเทพมหานคร'),('C026','Coffee's บิ๊กซีเชียงราย2','เชียงราย'),('C027','Coffee's บิ๊กซีบางพลี','สมุทรปราการ'),
-('C028','Coffee's บิ๊กซีเพชรเกษมextra','กรุงเทพมหานคร'),('C029','Coffee's ทาวน์เซ็นเตอร์บิ๊กซีหัวหมาก','กรุงเทพมหานคร'),('C030','Coffee's บิ๊กซีบางใหญ่','นนทบุรี')                                                                                
-                                                                                    
-                                                                                     
+INSERT INTO `cafe`.`Store` VALUES ('C001','Coffee\'s เซ็นทรัลพระราม3','กรุงเทพมหานคร'),
+('C002','Coffee\'s เซ็นทรัลพระราม9','กรุงเทพมหานคร'),
+('C003','Coffee\'s Centralนครราชสีมา','นครราชสีมา'),
+('C004','Coffee\'s เซ็นทรัลศรีราชา','ชลบุรี'),
+('C005','Coffee\'s เซ็นทรัลอยุธยา','พระนครศรีอยุธยา'),
+('C006','Coffee\'s Centralมหาชัย','สมุทรสาคร'),
+('C007','Coffee\'s เซ็นทรัลเชียงใหม่','เชียงใหม่'),
+('C008','Coffee\'s UnitedCenter(สีลม)','กรุงเทพมหานคร'),
+('C009','Coffee\'s สยามเซ็นเตอร์','กรุงเทพมหานคร'),
+('C010','Coffee\'s เซ็นจูรี่อนุสาวรีย์','กรุงเทพมหานคร')
+('C011','Coffee\'s CentralWestgateบางใหญ่','กรุงเทพมหานคร'),
+('C012','Coffee\'s เซ็นทรัลเวิลด์','กรุงเทพมหานคร'),
+('C013','Coffee\'s CenterOneอนุสาวรีย์ชัยสมรภูมิ','กรุงเทพมหานคร'),
+('C014','Coffee\'s Centralสุราษฎร์ธานี','สุราษฎร์ธานี'),
+('C015','Coffee\'s Centralนครศรีธรรมราช','นครศรีธรรมราช'),
+('C016','Coffee\'s เซ็นทรัลลาดพร้าวชั้นG','กรุงเทพมหานคร'),
+('C017','Coffee\'s บิ๊กซีศรีนครินทร์,'สมุทรปราการ'),
+('C018','Coffee\'s บิ๊กซีพัทยาใต้','ชลบุรี'),
+('C019','Coffee\'s บิ๊กซีอยุธยา','พระนครศรีอยุธยา'),
+('C020','Coffee\'s บิ๊กซีสุขาภิบาล3','กรุงเทพมหานคร'),
+('C021','Coffee\'s บิ๊กซีพระราม4','กรุงเทพมหานคร'),
+('C022','Coffee\'s บิ๊กซีราชดำริ','กรุงเทพมหานคร'),
+('C023','Coffee\'s บิ๊กซีนครปฐม','นครปฐม'),
+('C024','Coffee\'s บิ๊กซีมหาชัย','สมุทรสาคร'),
+('C025','Coffee\'s บิ๊กซีสุขาภิบาล5,'กรุงเทพมหานคร'),
+('C026','Coffee\'s บิ๊กซีเชียงราย2','เชียงราย'),
+('C027','Coffee\'s บิ๊กซีบางพลี','สมุทรปราการ'),
+('C028','Coffee\'s บิ๊กซีเพชรเกษมextra','กรุงเทพมหานคร'),
+('C029','Coffee\'s ทาวน์เซ็นเตอร์บิ๊กซีหัวหมาก','กรุงเทพมหานคร'),
+('C030','Coffee\'s บิ๊กซีบางใหญ่','นนทบุรี')                                                                                
+                                                                                 
 ;
-UNLOCK TABLES;
-                                                                                     
+UNLOCK TABLES;                                                 
