@@ -130,7 +130,7 @@ INSERT INTO `menu` VALUES ('0001','Espresso',35,20,'Hot','Coffee'),('0002','Espr
 ('0029','Macchiato',60,30,'Cold','Coffee'),('0030','Macchiato',70,35,'Frappe','Coffee'),('0031','Caramel Macchiato',55,30,'Hot','Coffee'),('0032','Caramel Macchiato',65,35,'Cold','Coffee'),
 ('0033','Caramel Macchiato',75,40,'Frappe','Coffee'),('0034','Italian soda',50,20,'Cold','Coffee'),('0035','Chocolate',45,25,'Hot','Coffee'),('0036','Chocolate',50,30,'Cold','Coffee'),
 ('0037','Chocolate',55,35,'Frappe','Coffee'),('0038','Dark Chocolate',50,30,'Hot','Milk-Chocolate'),('0039','Dark Chocolate',55,35,'Cold','Milk-Chocolate'),
-('040','Dark Chocolate',60,40,'Frappe','Milk-Chocolate'),('0042','Green Tea',40,15,'Hot','Tea'),('0043','Green Tea',45,20,'Cold','Tea'),('0044','Green Tea',50,25,'Frappe','Tea'),
+('0040','Dark Chocolate',60,40,'Frappe','Milk-Chocolate'),('0042','Green Tea',40,15,'Hot','Tea'),('0043','Green Tea',45,20,'Cold','Tea'),('0044','Green Tea',50,25,'Frappe','Tea'),
 ('0045','Milk Tea',45,20,'Hot','Tea'),('0046','Milk Tea',50,25,'Cold','Tea'),('0047','Milk Tea',55,30,'Frappe','Tea'),('0048','Thai Tea',45,20,'Hot','Tea'),
 ('0049','Thai Tea',50,25,'Cold','Tea'),('0050','Thai Tea',55,30,'Frappe','Tea'),('0051','Mango Sticky Rice',100,60,'Dessert','Dessert'),('0052','Strawberry Pancake',150,90,'Dessert','Dessert'),
 ('0053','Choc Banana Pancake',155,80,'Dessert','Dessert'),('0054','Macaron',120,80,'Dessert','Dessert'),('0055','Pudding',150,100,'Dessert','Dessert'),('0056','Butter Cake',120,100,'Dessert','Dessert'),
