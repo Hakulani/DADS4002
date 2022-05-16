@@ -65,8 +65,7 @@ DEFAULT CHARACTER SET = utf8;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `cafe`.`order_record` (
   `Order_NO` INT NOT NULL,
-  `Date` DATE NOT NULL,
-  `Times` DATETIME NOT NULL,
+  `Datetime` DATETIME NOT NULL,
   `Quantity` INT NOT NULL,
   `Menu_id` CHAR(4) NOT NULL,
   `Customer_id` CHAR(4) NOT NULL,
@@ -170,4 +169,16 @@ INSERT INTO `cafe`.`Store` VALUES ('C001','Coffee\'s เซ็นทรัลพ
                                                                                      
 ;
 UNLOCK TABLES;
-                                                                                     
+
+-- Dump data in order_record table
+--(Order_No, Datetime, Quantity, Menu_id, Customer_id,Discount,Profit,Amount,Order_point,Store_id)
+LOCK TABLES `cafe`.`Store` WRITE;      
+
+INSERT INTO order_record  
+VALUES (1,'2020-05-01 08:00:00:00',2,'0001','0002',0.1,11.5,63,1,'C002'),
+(),
+(),
+();
+UNLOCK TABLES;     
+     
+        
